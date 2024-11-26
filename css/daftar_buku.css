@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  background-color: #f8f9fa;
+}
+.content {
+  flex-grow: 1;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-header {
+  background-color: #ffffff; /* Warna dasar dashboard header */
+  padding-left: 10px;
+  padding-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Atur z-index agar dashboard-header berada di bawah navbar */
+}
+
+
+th:first-child, td:first-child {            padding-left: 16px; /* Padding kiri untuk sel pertama */
+}
+/* Tombol Style */
+.btn-filter {
+  margin-right: 10px; /* Spasi antara tombol */
+}

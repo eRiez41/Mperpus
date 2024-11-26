@@ -1,0 +1,34 @@
+.navbar {
+  background-color: #16283c; /* Warna dasar navbar */
+  margin: 0;
+  border-radius: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2; /* Atur z-index agar navbar berada di atas konten */
+}
+.navbar .navbar-brand {
+  color: #ffffff;
+  padding-left: 0;
+}
+.navbar .navbar-text {
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.navbar-toggler-icon.minimize-btn {
+  color: white; /* Warna putih untuk ikon garis tiga */
+}
+.navbar-toggler-icon.minimize-btn:hover {
+  color: #f8f9fa; /* Warna putih pada hover */
+}
+.minimize-btn {
+  cursor: pointer;
+  margin-right: 20px; /* Adjusted spacing */
+  padding: 5px; /* Padding tambahan */
+  border-radius: 5px; /* Agar sudut tombol menjadi sedikit melengkung */
+  background-color: transparent; /* Hapus latar belakang oranye */
+  z-index: 3; /* Atur z-index agar minimize-btn berada di atas konten */
+  margin-left: 20px;
+}
+.minimize-btn:hover {
+  background-color: #204162; /* Ubah warna latar belakang pada hover */
+}

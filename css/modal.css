@@ -1,0 +1,31 @@
+/* css/modal.css */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sedikit shadow untuk efek lift */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 10px;
+    font-size: 14px; /* Ukuran font yang sedikit lebih kecil */
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-body {
+    padding: 20px;
+}

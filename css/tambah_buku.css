@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    max-width: 1600px;
+    margin: auto;
+    background: white;
+    overflow-x: hidden;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 280px;
+    transition: margin-left 0.5s ease, width 0.5s ease;
+    width: calc(100% - 280px);
+}
+
+h2 {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+.form-buku {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-buku .form-group {
+    margin-bottom: 15px;
+}
+
+.form-buku .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-buku .form-group .input-buku[type="text"],
+.form-buku .form-group .input-buku[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-buku .btn-buku {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-buku .btn-buku:hover {
+    background-color: #0056b3;
+}

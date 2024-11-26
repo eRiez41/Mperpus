@@ -1,0 +1,129 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    height: 100%;
+}
+
+.left-section {
+    flex: 1;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Mengatasi kemungkinan pemotongan gambar */
+}
+
+.left-section img {
+    width: 100%; /* Menyempurnakan gambar agar sesuai dengan lebar */
+    height: 100%; /* Menyempurnakan gambar agar sesuai dengan tinggi */
+    object-fit: cover; /* Menutupi seluruh area */
+    object-position: center; /* Posisikan gambar di tengah */
+}
+
+.right-section {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.right-section h2 {
+    margin-bottom: 20px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 24px; /* Ukuran huruf yang diperbesar */
+}
+
+.right-section h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    bottom: -10px;
+    left: 0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 18px; /* Ukuran huruf yang diperbesar untuk input */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px; /* Ukuran huruf yang diperbesar untuk label */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc; /* Warna garis bawah default */
+    background-color: transparent;
+    transition: border-bottom-color 0.3s, color 0.3s; /* Transisi warna garis bawah dan teks */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px; /* Ukuran huruf yang diperbesar untuk input */
+    color: #007bff; /* Warna teks default */
+}
+
+.input-group input:focus {
+    outline: none;
+    border-bottom-color: #007bff; /* Warna garis bawah saat fokus */
+}
+
+.input-group input::placeholder {
+    color: #ccc; /* Warna teks placeholder saat form kosong */
+}
+
+.input-group input:not(:placeholder-shown) {
+    border-bottom-color: #007bff; /* Warna garis bawah saat form tidak kosong */
+}
+
+.input-group input:not(:placeholder-shown)::placeholder {
+    color: #007bff; /* Warna teks placeholder saat form tidak kosong */
+}
+
+
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #007bff;
+    padding: 0 10px; /* Jarak dari kanan */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px; /* Ukuran huruf yang diperbesar untuk label */
+}
+
+
+button {
+    width: 100%;
+    padding: 15px; /* Perbesar tombol */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px; /* Ukuran huruf yang diperbesar untuk tombol */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
